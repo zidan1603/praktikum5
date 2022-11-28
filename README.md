@@ -18,24 +18,45 @@ Berikut adalah tampilan dari flowchartnya:
 <img width="217" alt="ss31" src="https://user-images.githubusercontent.com/115911489/204246871-db4cc05d-059b-45ea-a98f-60140f2af16d.png">
 
 Penjelasan
+
 Mendeklarasikan Dictonary kosong dengan synatax data = {}
 
 Lalu buat perulangan sambil dan untuk menginisialisasikan penambahan menu pilihan Tambah, Ubah, Hapus, Cari, Lihat, dan Keluar :
+
 while True:
-    x = input("(T)ambah, (U)bah, (H)apus, (C)ari, (L)ihat, (K)eluar: ")
+ 
+ x = input("(T)ambah, (U)bah, (H)apus, (C)ari, (L)ihat, (K)eluar: ")
+
 Menambahkan Data
-Berikut adalah Syntax untuk menambahkan data dengan ketentuan jika kita mengetikkan T pada keyboard, maka akan melakukan penambahan data dan ditampung ke dalam Dictonary data yang telah kita buat, dengan nama sebagai keys dan yang lainnya sebagai nilai.
-    if x.lower() == 't':
-        print("Tambah Data")
-        nama = input("Nama           : ")
-        nim = int(input("NIM            : "))
-        uts = int(input("Nilai UTS      : "))
-        uas = int(input("Nilai UAS      : "))
-        tugas = int(input("Nilai Tugas    : "))
-        n_akhir = tugas * 0.30 + uts * 0.35 + uas * 0.35
-        data[nama] = nim, uts, uas, tugas, n_akhir
+
+Berikut adalah Syntax untuk menambahkan data dengan ketentuan jika kita mengetikkan T pada keyboard, maka akan melakukan penambahan data dan ditampung ke dalam 
+
+Dictonary data yang telah kita buat, dengan nama sebagai keys dan yang lainnya sebagai nilai.
+
+if x.lower() == 't':
+
+    print("Tambah Data")
+
+    nama = input("Nama           : ")
+
+    nim = int(input("NIM            : "))
+    
+    uts = int(input("Nilai UTS      : "))
+    
+    uas = int(input("Nilai UAS      : "))
+    
+    tugas = int(input("Nilai Tugas    : "))
+    
+    n_akhir = tugas * 0.30 + uts * 0.35 + uas * 0.35
+    
+    data[nama] = nim, uts, uas, tugas, n_akhir
+
 Mengubah Data
-Jika input yang dimasukkan adalah U, di dalam kondisi ini terdapat input dan kondisi, dimana jika input nama ada didalam variabel data maka akan muncul beberapa pilihan untuk mengubah semua data atau data tertentu saja.
+
+Jika input yang dimasukkan adalah U, di dalam kondisi ini terdapat input dan kondisi, dimana jika input nama ada didalam variabel data maka akan muncul beberapa 
+
+pilihan untuk mengubah semua data atau data tertentu saja.
+
 elif x.lower() == 'u':
     print("Ubah Data")
     nama = input("Masukkan Nama   : ")
