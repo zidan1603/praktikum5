@@ -19,6 +19,7 @@ Berikut adalah tampilan dari flowchartnya:
 
 Penjelasan
 Mendeklarasikan Dictonary kosong dengan synatax data = {}
+
 Lalu buat perulangan sambil dan untuk menginisialisasikan penambahan menu pilihan Tambah, Ubah, Hapus, Cari, Lihat, dan Keluar :
 while True:
     x = input("(T)ambah, (U)bah, (H)apus, (C)ari, (L)ihat, (K)eluar: ")
